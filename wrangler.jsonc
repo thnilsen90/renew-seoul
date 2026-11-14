@@ -1,0 +1,10 @@
+// Cloudflare Workers (static assets only). Deploy: npm run build && npx wrangler deploy
+{
+  "name": "renew-seoul",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./dist",
+    // Unknown paths (e.g. /routines/the-essential-routine) get index.html so the client router can take over.
+    "not_found_handling": "single-page-application"
+  }
+}

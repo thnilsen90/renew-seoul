@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Unknown paths get index.html so the client router can take over.
+# Real files (assets, favicon) are served first because force is off.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
