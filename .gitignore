@@ -1,0 +1,19 @@
+# Dependencies and build output
+node_modules
+dist
+
+# Local env files — keep secrets like SITE_PIN out of git
+.env
+.env.*
+!.env.example
+*.local
+
+# Hosting CLIs
+.vercel
+.netlify
+.wrangler
+
+# OS, logs and personal tool settings
+.DS_Store
+*.log
+.claude/settings.local.json
